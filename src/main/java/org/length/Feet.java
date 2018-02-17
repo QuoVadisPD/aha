@@ -1,12 +1,12 @@
 package org.length;
 
-class Yard extends Length {
+    class Feet extends Length{
 
-    Yard(int value) {
+    Feet(int value) {
         super(value);
     }
 
     int value() {
-        return 3 * value;
+        return value;
     }
 }

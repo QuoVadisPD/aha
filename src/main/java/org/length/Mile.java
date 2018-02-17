@@ -7,6 +7,6 @@ class Mile extends Length {
     }
 
     int value() {
-       return 1760 * value;
+       return 1760 * 3 * value;
     }
 }

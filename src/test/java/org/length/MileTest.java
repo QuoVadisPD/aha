@@ -10,6 +10,15 @@ import static org.junit.Assert.assertThat;
 public class MileTest {
 
     @Test
+    public void one_mile_should_equals_to_1760_yard() throws Exception {
+        Mile mile = new Mile(1);
+        Yard yard = new Yard(1760);
+
+        assertThat(mile, is(yard));
+        assertThat(yard, is(mile));
+    }
+
+    @Test
     public void one_mile_should_equal_to_one_mile() throws Exception {
         Mile mile = new Mile(1);
         Mile mile2 = new Mile(1);

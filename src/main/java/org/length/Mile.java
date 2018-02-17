@@ -1,17 +1,12 @@
 package org.length;
 
-class Mile {
-    int value;
+class Mile extends Length {
 
     Mile(int value) {
-        this.value = value;
+        super(value);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o instanceof Yard) {
-            return value * 1760 == ((Yard) o).value;
-        }
-        return value == ((Mile) o).value;
+    int value() {
+       return 1760 * value;
     }
 }

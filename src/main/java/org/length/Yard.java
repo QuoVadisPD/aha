@@ -7,6 +7,6 @@ class Yard extends Length {
     }
 
     int value() {
-        return 3 * value;
+        return 3 * 12 * value;
     }
 }

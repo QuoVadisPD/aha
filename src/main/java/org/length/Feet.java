@@ -7,6 +7,6 @@ package org.length;
     }
 
     int value() {
-        return value;
+        return 12 * value;
     }
 }

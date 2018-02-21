@@ -15,7 +15,8 @@ public class MileTest {
         Feet feet = new Feet(5280);
 
         assertThat(mile, is(feet));
-        assertThat(feet, is(mile)); }
+        assertThat(feet, is(mile));
+    }
 
     @Test
     public void one_mile_should_equals_to_1760_yard() throws Exception {

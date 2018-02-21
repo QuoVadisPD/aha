@@ -10,6 +10,15 @@ import static org.junit.Assert.assertThat;
 public class MileTest {
 
     @Test
+    public void one_mile_should_equals_to_63360_inch() throws Exception {
+        Mile mile = new Mile(1);
+        Inch inch = new Inch(63360);
+
+        assertThat(mile, is(inch));
+        assertThat(inch, is(mile));
+    }
+
+    @Test
     public void one_mile_should_equals_to_5280_feet() throws Exception {
         Mile mile = new Mile(1);
         Feet feet = new Feet(5280);

@@ -1,6 +1,6 @@
 package org.length;
 
-    class Inch extends Length{
+class Inch extends Length {
 
     Inch(int value) {
         super(value);

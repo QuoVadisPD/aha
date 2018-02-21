@@ -24,4 +24,13 @@ public class YardTest {
 
         assertThat(yard, not(equalTo(yard2)));
     }
+
+
+    @Test
+    public void one_yard_should_equal_to_3_feet() throws Exception {
+        Yard yard = new Yard(1);
+        Feet feet = new Feet(3);
+
+        assertThat(yard, is(feet));
+    }
 }

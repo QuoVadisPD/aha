@@ -25,4 +25,13 @@ public class FeetTest {
 
         assertThat(feet, not(equalTo(feet2)));
     }
+
+
+    @Test
+    public void one_feet_should_equal_to_12_inches() throws Exception {
+        Feet feet = new Feet(1);
+        Inch inch = new Inch(12);
+
+        assertThat(feet, is(inch));
+    }
 }
